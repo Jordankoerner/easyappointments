@@ -5,7 +5,7 @@
 Easy!Appointments is a php application and needs an apache server with php and mysql installed. Apart from that, the php "curl" extension and the apache module "mod_rewrite" need to be enabled. To check if your server fullfils the needed prerequisites you will need to either contact the web hosting company or create a php file on your web root directory with the content <?php phpinfo(); ?> and then access it from the web (eg "phpinfo.php" >> "http://domain-name.com/phpinfo.php"). This url will display all the server details.
 
 
-## How do I create a Google Calendar API key?
+## How do I create a Google Calendar API key?,
 
 Google needs to authorize the usage of her services, so you need to create an API key for your Easy!Appointments installation. In order to do that you will need a google account. When logged in, go to the Google Developers Console and create a new project. Enable the Calendar API service and then head to the "APIs & Auth >> Credentials" menu item. There, you will need to create a new OAuth client id. The last step is to enter a valid redirect url for the authrorization process. This is very important because if the redirect url is wrong, you will not be able to use the google synchronization feature on your E!A installation. For your redirect url enter the following value: "http://domain-name/folder-to-ea-installation/google/oauth_callback" (replace the domain name and the path to the Easy!Appointments installation folder with your server values). For example if E!A is installed on the "ea" folder on the web root directory the valid redirect url would be "http://my-domain/ea/google/callback". 
 
